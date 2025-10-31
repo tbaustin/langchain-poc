@@ -1,8 +1,11 @@
 import os
 
+from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_google_genai import ChatGoogleGenerativeAI
 from pydantic import SecretStr
+
+load_dotenv()
 
 
 def create_genai_chain():

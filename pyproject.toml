@@ -3,9 +3,9 @@ name = "langchain-poc"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11,<3.13"
 dependencies = [
-    "faiss-cpu>=1.12.0",
+    "faiss-cpu>=1.8.0,<1.9.0",
     "fastapi>=0.116.1",
     "langchain>=0.3.27",
     "langchain-community>=0.3.29",

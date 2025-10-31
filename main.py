@@ -1,6 +1,5 @@
 import logging
 
-from dotenv import load_dotenv
 from langchain_core.runnables import RunnableConfig
 
 from src.graph import create_graph
@@ -11,8 +10,6 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
-
-load_dotenv()
 
 graph = create_graph()
 
